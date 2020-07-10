@@ -1,0 +1,17 @@
+
+number = input("Please write a positive number: ")
+if number.isnumeric() != True:
+    while number.isnumeric() != True:
+        print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
+        number = input("Please write a positive number: ")
+number_list = list(number)
+total = 0
+if number.isnumeric() == True:
+    for i in number_list:
+        i_int = int(i)
+        sum_number = i_int**len(number_list)
+        total += sum_number
+    if total == int(number):
+        print(f"{number} is an armstrog number.")
+    else:
+        print(f"{number} is not an armstrog number.")
