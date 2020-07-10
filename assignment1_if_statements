@@ -1,0 +1,9 @@
+name = input("Please write your name: ").title().strip()
+saved_name = {"Joseph", "Victor", "Tom", "Henry", "Alex", "Mathew"}
+
+if name in saved_name:
+
+    print(f"Hello, {name}! The password is : W@12")
+
+else:
+    print(f"Hello, {name} see you later!")
