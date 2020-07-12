@@ -1,0 +1,21 @@
+number = int(input("Please write a number: "))
+
+mod_list = []
+
+for i in range(1, number):
+
+    if number % i == 0:
+
+        mod_list.append(i)
+
+mod_list.append(number)
+
+if len(mod_list) > 2 or number == 1:
+
+    print("not prime number")
+
+elif len(mod_list) <= 2 and number != 1:
+
+    print("prime number")
+
+
