@@ -1,0 +1,13 @@
+number_i= input("please write number until you want to break and prees q : ").lower().strip()
+number_x = int(number_i)
+letter = 'q'
+toplam = 0
+while True:
+    if number_i.isdigit():
+        number_x= int(number_i)
+        toplam = toplam + number_x
+    else:
+        break
+    number_i= input("please write number until you want to break and prees q : ").lower().strip()
+if number_i == letter :
+    print(f"The total you wrote is {toplam}.")
