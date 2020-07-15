@@ -1,0 +1,23 @@
+number = int(input("Please write a number: "))
+
+modulus_list =[] 
+
+prime_list = []
+
+for i in range(2, number + 1):
+
+    check_list = list(range(2, number + 1))
+
+    for n in check_list:
+
+        if i % n == 0:
+
+            modulus_list.append(i)
+
+for x in modulus_list:
+
+    if modulus_list.count(x) <= 1:
+
+        prime_list.append(x)
+
+print(prime_list)
