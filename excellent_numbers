@@ -1,0 +1,13 @@
+num = int(input("please write a number: "))
+modul_list = []
+for i in range(1, num):
+    if num%i==0:
+        modul_list.append(i)
+y=0
+for x in modul_list:
+    y += x
+if y == num:
+    print(f"{num} is a excellent number")
+else:    
+    print(f"{num} is not a excellent number")
+print(modul_list)   
