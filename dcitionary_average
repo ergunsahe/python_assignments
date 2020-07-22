@@ -1,0 +1,11 @@
+average_grade={}
+for i in students:
+    grades=[]
+    for j in students[i].values():
+        grades.append(j)
+    average_grade[i]=sum(grades)/5
+max_grade=max(average_grade, key=average_grade.get)
+min_grade=min(average_grade, key=average_grade.get)
+print(max_grade, average_grade[max_grade])
+print(min_grade, average_grade[min_grade])
+print(average_grade)

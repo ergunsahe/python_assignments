@@ -1,0 +1,12 @@
+max_avg, min_avg=0, 100
+for i in students:
+    average=sum(students[i].values())/len(students[i].values())
+    if average>max_avg:
+        max_avg=average
+        max_key=i
+    if min_avg> average:
+        min_avg=average
+        min_key=i
+    print(f"{i}, {average}")
+
+print(f"{max_key} has with {max_avg} maximum average,\n{min_key} has with {min_avg} minimum average")
