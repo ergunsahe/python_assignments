@@ -1,0 +1,8 @@
+sentence =input("Please write someting:")
+sent_list= list(sentence)
+sent_dic={}
+for i in sorted(sent_list):
+    county= sent_list.count(i)
+    sent_dic[i]=county
+print(sent_dic)
+
