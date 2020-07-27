@@ -1,0 +1,21 @@
+def front_back(word):
+    if len(word)==1:
+        return word
+    else:
+        for i in word:
+            if word.index(i)==0:
+                x=i
+            elif word.index(i)==len(word)-1:
+                y=i
+        word_list=[]
+        for j in list(word):
+            if j==y:
+                word_list.append(x)
+            elif j==x:
+                word_list.append(y)
+            else:
+                word_list.append(j)
+        d=""
+        for k in word_list:
+            d += k
+        return d
