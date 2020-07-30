@@ -12,17 +12,17 @@ sudoku = [
 n=""
 k=0
 x=0
-print(14*"- ")
+print(15*"- ")
 for i in sudoku:
     for i in i:
         k+=1
         x+=1
         n+=str(i)+"  "
         if k%3==0 and k%9!=0:
-            n+="|"
+            n+="| "
         if k%9==0 and k%27!=0:
             n+="\n"
         if k%27==0:
-            n+="\n"+ "- "*14+"\n"
-
+            n+="\n"+ "- "*15+"\n"
+        
 print(n)
