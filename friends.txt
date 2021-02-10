@@ -1,0 +1,6 @@
+Canan,Tahmaz,28
+Haki,Can,19
+Halil,Cibran,22
+Mahmut,Hekimoğlu,34
+Nazim,Hikmet,44
+Yaiar,Kemal,44
